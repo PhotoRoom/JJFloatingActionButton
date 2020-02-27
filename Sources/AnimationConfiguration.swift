@@ -465,7 +465,7 @@ internal extension JJItemAnimationConfiguration {
         precondition(index >= 0)
         precondition(index < numberOfItems)
 
-        let startAngle: CGFloat = actionButton.isOnLeftSideOfScreen ? 2 * .pi : .pi
+        let startAngle: CGFloat = 3 * .pi / 4
         let endAngle: CGFloat = 1.5 * .pi
 
         switch (numberOfItems, index) {

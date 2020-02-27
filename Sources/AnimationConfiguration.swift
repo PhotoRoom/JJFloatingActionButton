@@ -466,7 +466,7 @@ internal extension JJItemAnimationConfiguration {
         precondition(index < numberOfItems)
 
         let startAngle: CGFloat = 3 * .pi / 4
-        let endAngle: CGFloat = 1.5 * .pi
+        let endAngle: CGFloat = 5 * .pi / 4
 
         switch (numberOfItems, index) {
         case (1, _):

@@ -465,8 +465,9 @@ internal extension JJItemAnimationConfiguration {
         precondition(index >= 0)
         precondition(index < numberOfItems)
 
-        let startAngle: CGFloat = 3 * .pi / 4
-        let endAngle: CGFloat = 5 * .pi / 4
+        let isRTLLanguage = UIApplication.shared.userInterfaceLayoutDirection == .rightToLeft
+        let startAngle: CGFloat = isRTLLanguage ? (7 * .pi / 4) : (3 * .pi / 4)
+        let endAngle: CGFloat = isRTLLanguage ? (9 * .pi / 4) : (5 * .pi / 4)
 
         switch (numberOfItems, index) {
         case (1, _):
